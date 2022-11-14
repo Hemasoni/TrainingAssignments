@@ -1,0 +1,8 @@
+1. How to display images in title bar?
+The majority of websites add an icon or image logo in the title bar. The icon logo is also called a favicon.
+Add rel attribute of link tag and choose the image you want to display.
+
+
+2. What is the purpose of "alt" attribute of img tag?
+The <img> alt attribute is used to specify the alternate text for an image.
+It is useful when the image is not displayed. It is used to give alternative information for an image
