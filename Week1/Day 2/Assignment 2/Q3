@@ -1,0 +1,11 @@
+Why do we use  ~  and >  symbols in css selectors?
+
+GENERAL SIBLING SELECTOR(~)
+It is implemented for selecting the element that trails the initial or first selector element and shares the same parent as 
+the first selector element. The general sibling selector is explicitly implemented for choosing a group of elements 
+allocated for the same parent element.
+
+CHILD SELECTOR(>)
+It is implemented for selecting that particular element that lies within the immediate child of that specific tag. It is more
+precise or exact than the descendant selector since it chooses only the second selector if it has the first selector element
+as its parent.
