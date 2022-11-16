@@ -1,0 +1,31 @@
+1. What is Validation in Client Side Programming? 
+Client-side validation is visible to the user. It involves having validation on input forms through JavaScript.
+For example, if the input is submitted for a phone number or email, a JavaScript validator would provide an error if anything is 
+submitted that does not conform to a phone number or email.
+
+2. What are the advantages of performing Validations?
+It stops the user from entering data that may be incorrect. It also reduces the chance of wrong data being entered by mistake.
+Advantages :
+Consistent through output
+Reduction in rejections and reworks
+Reduction in utility cost
+Avoidance of capital expenditures
+Increased efficiency
+
+3. What is querystring in webpages?
+A query string is the portion of a URL where data is passed to a web application and/or back-end database.
+It is a group of keywords that send request to the web server. These requests are used to pass information 
+(parameters) from one page to another and you can access those information in receiving page.
+
+4. What is <input type="hidden"  />  ? Why do we use?
+A hidden field lets web developers include data that cannot be seen or modified by users when a form is submitted.
+While the value is not displayed to the user in the page's content, it is visible using any browser's 
+developer tools or "View Source" functionality. Basically hidden fields will be more useful and advantages to use with multi step form.
+We can use hidden fields to pass one step information to next step using hidden and keep it forwarding till the end step.
+
+5. Diff. between  <input type="submit"/> and <button></button>?
+Buttons created with the <Button> element function just like buttons created with the INPUT element. 
+But they offer richer rendering possibilities: the BUTTON element may have content. For example, a Button element that contains an
+image functions like Input element whose type is set to “image”, but the Button element type allows content.
+
+A 'submit' input type has the default functionality of submitting the form it's placed in.

@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <style>
+            .details
+            {
+                width: 600px;
+                height: 300px;
+                background-color: rgb(236, 218, 218);
+                margin:auto
+            }
+           
+           .heading
+           {
+            background-color: rgb(107, 80, 64);
+            width: 600px;
+            height: 65px;
+            margin:auto
+           }
+
+        </style>
+    </head>
+    <body>
+        <h3>ITALIAN PIZZA</h3>
+        <hr/>
+
+        <form method="post">
+            <fieldset>
+                <br/>
+                <div class="heading">
+                <p style="padding: 10px 20px; font-size: 20px; "> WELCOME TO ITALIAN PIZZA!<br/>
+                <span style="font-size: 15px;"> We deliver pizza in 40 minutes max. If not - Pizza's on us!</span> </p>
+            </div>
+
+               <div class="details">
+                <br/>
+                <label> Email</label> 
+                <br/>
+                <textarea id="ta1" name="ta1" rows="1" cols="40"></textarea>
+                <br/><br/>
+
+                <label>Phone: </label> <br/>
+                <input placeholder = "Area"/>
+                <input placeholder="Local"/>
+                <input placeholder ="Local"/>
+                <br/><br/>
+
+
+                <label>Pizza Size: </label> <br/>
+                <input type="radio" id="r1" name="r1" />
+                <label>8-inch </label>
+                <input type="radio" id="r2" name="r1"  />
+                <label>10-inch </label>
+                <input type="radio" id="r3" name="r1" />
+                <label>12-inch </label>
+                <input type="radio" id="r4" name="r1" />
+                <label>14-inch </label>
+                 
+                <br/><br/>
+                
+                <label>Toppings: </label> <br/>
+                <input type="checkbox" id="ck1" name="ck1"  />
+                <label>Pepperoni </label>
+                <input type="checkbox" id="ck2" name="ck2"  />
+                <label>Onions </label>
+                <input type="checkbox" id="ck3" name="ck3"/>
+                <label>Mushrooms </label>
+                <input type="checkbox" id="ck4" name="ck4"  />
+                <label>Sausage</label>
+                
+
+            <br/><br/>
+
+             <span style="color:red" > * </span>
+             <input type="checkbox" id="ck5" name="ck5"  />
+             <label> I agree to the TERMS AND CONDITIONS </label>
+
+                </div>
+                 
+                   <p style="text-align: center">  <input style="background-color: red;height: 45px; border-color: red; width: 600px;font-size: 18; color:aliceblue;" type="submit" value="Order Now" /> 
+                   </p>
+            </fieldset>
+        </form>
+
+    </body>
+</html>

@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <style>
+            
+           fieldset{
+            width: 45%;
+            margin: auto;
+           }
+        </style>
+    </head>
+    <body>
+        <h3>Credit Card</h3>
+        <hr/>
+
+        <form method="post">
+            <fieldset>
+                <br/>
+                <span style="background-color: lightblue; color:white; padding: 10px 20px; "> <img src="https://th.bing.com/th/id/R.28d8aab7289bcfb8245a9ba7cd6c4a1d?rik=4LjmO6shfSdu7g&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_328559.png&ehk=c7QRA2KVZtR%2bw70mOLcnB33bAm9HW0fSCqr5gEMvtp4%3d&risl=&pid=ImgRaw&r=0" width="15" height="15"> This is a secure 128-bit SSL Encrypted payment. You're safe </span>
+                <br/><br/>
+                <input type="radio" id="r1" name="r1" value="Credit Card (Visa, Mastercard)" />
+                <label>Credit Card (Visa, Mastercard) <img src="https://th.bing.com/th/id/OIP.b6yFFJ3Xiu219KqkLY4RvgHaCR?pid=ImgDet&rs=1" width="20px" height="15px"> <img src="https://img.favpng.com/0/12/17/mastercard-credit-card-payment-visa-nyse-ma-png-favpng-n2pqLqnZWVqJSFS9UmqsPydSN.jpg" width="20" height="15"> </label>
+                 
+                <input type="radio" id="r1" name="r1" value="Paypal" />
+                <label>Paypal <img src="https://logos-download.com/wp-content/uploads/2016/03/PayPal_Logo_2007.png" width="20" height="11"> </label>
+                <br/><br/>
+                
+                <label>Card Number <span style="font-size:10px">  The 15 digits on front of your card </span> </label>  <br/>
+                <textarea id="ta1" name="ta1" rows="1" cols="50"></textarea>
+                <br/><br/>
+            
+               <label> Expiration Date </label>
+               <label style="margin:120px;"> CVV2/CVC2 : </label><br/>
+                <select  id="s1" name="s1">
+                    <option>Month</option>
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                </select>
+                
+                    
+                <select  id="s2" name="s2">
+                    <option>Year</option>
+                    <option>2025</option>
+                    <option>2026</option>
+                    <option>2027</option>
+                    <option>2028</option>
+                    <option>2029</option>
+                    <option>2030</option>
+                    <option>2031</option>
+                    <option>2032</option>
+                </select>
+                <input style="margin-left: 50px;" type="password" id="p1" name="p1"/>
+              <br/>
+              <br/>
+                
+                <label>Full Name on a Card : </label> <br/>
+                <input type="text" id="t1" name="Full Name on a Card " />
+                <br/><br/>
+             <p style=" background-color:gray; padding: 10px 20px; text-align: center;" > You will be charged $29.00 every month </p>
+                <p style= "text-align: center;"> <input style="background-color:orange; color:white; border-color: orange; padding:10px 10px; font-size:20; text-align: center;" type="submit" value="Complete Transaction"/>
+                </p>
+
+            </fieldset>
+        </form>
+
+    </body>
+</html>
