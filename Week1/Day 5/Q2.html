@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html  >
+	<head> </head>
+	<body>
+	<h3>Vertical Graphs using Canvas </h3>
+		<hr/>	 
+		
+		<input type="button"  onclick="fn_drawGraphics()"  value="Draw Graphics" />
+		<br/> <br/>
+		
+		<canvas  id="c1"  width="300"  height="300"  style="border:2px solid blue;">
+		</canvas>
+		
+		<script>		 		
+			function  fn_drawGraphics()
+			{
+			var  obj =  document.getElementById("c1");
+			var  ctx   =  obj.getContext("2d");	
+			
+			var ar = [250, 140, 40, 280, 120, 100, 175];
+			var x = 10, w = 30;
+
+          
+			for(var i = 0; i < 7; i++)
+			{
+				ctx.beginPath();
+				ctx.fillStyle = "Blue";
+				ctx.fillRect(x,300-ar[i], w, ar[i]);	
+				x = x + 40;
+			}			
+		 
+			}
+		</script>				
+	</body>	
+</html>
