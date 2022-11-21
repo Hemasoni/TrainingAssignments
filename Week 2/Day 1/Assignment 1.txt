@@ -1,0 +1,31 @@
+1.Why do we use position property in CSS?
+The position property specifies the type of positioning method used for an element.
+The CSS position property defines the position of an element in a document. 
+This property works with the left, right, top, bottom and z-index properties to determine the final position 
+of an element on a page.
+
+There are five different position values:
+
+a)static
+b)relative
+c)fixed
+d)absolute
+e)sticky
+
+
+
+2. What is the difference between position property values :  absolute / relative;
+An element with position: relative; is positioned relative to its normal position.
+Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted
+away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+An element with position: absolute; is positioned relative to the nearest positioned ancestor
+
+5.How to hide an element uisng CSS?
+a)We can use Top, Bottom, Left, Right properties in position:absoulte value to change the position of that element. 
+We canuse hide an element from the document body by moving it out of the screen. 
+
+b) Color property can also be used for making elements invisible by making them transparent. We can set the alpha channel with the following method.
+color: transparent
+
+c) Display property: The display property of CSS can also be used for hiding the element from DOM.
+We will use its one of the value which is known as Display: none
