@@ -1,0 +1,5 @@
+1) What is The Viewport?
+A Browser’s viewport is the area of web page in which the content is visible to the user.
+The viewport does not have the same size, it varies with the variation in screen size of the devices on which
+the website is visible. For a laptop, the viewport has a larger size as compared to a smartphone or tablet.
+

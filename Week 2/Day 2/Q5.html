@@ -1,0 +1,108 @@
+<html>	
+	<head> 
+        <style>
+            form{
+                position: relative;
+                left: 320px;
+                margin: auto;
+            }
+            fieldset
+            {
+               width: 40%;
+            }
+            #b1{
+                background-color: lightblue;
+                color: white;
+            }
+            #b1:hover
+            { background-color:blue;
+                
+            }
+            
+        </style>
+	</head>	
+    
+	<body>	
+        
+        <h2 style="text-align: center">Bank Account Opening Form</h2>
+        <br/>
+       
+
+	
+	<form 
+				action="Register.php" 		
+				autocomplete="off"	
+				method="GET">
+                <fieldset>
+		
+		<label style="font-weight:bold" > Name on Account <span style="color: red" >*</span> </label>
+		<br/><br/>
+        <input style="width: 100%;" type="text"  placeholder="First Name"  autofocus  required   
+					name="t1"   />
+                    <br/><br/
+        <input style="width: 100%" type="text"  placeholder="Middle Name"    required   
+					name="t2"   />
+                    <br/><br/>
+        <input style="width: 100%" type="text"  placeholder="Last Name"    required   
+					name="t3"   />
+		<br></br>
+        <label style="font-weight:bold" > Account Number <span style="color: red" >*</span> </label>
+		<br/>
+        <input style="width: 100%" type="number"   required   
+					name="t4"   />
+                    <br/><br/>
+     <label style="font-weight:bold" > Account Type </label>
+
+		<br/>
+        <input type="radio" name="Current Account">
+        <label>Current Account</label>
+		<br/>
+        <input type="radio" name="Savings Account">
+        <label>Savings Account</label>
+		<br/><br/>
+        <label style="font-weight:bold" > Address <span style="color: red" >*</span> </label>
+		<br/>
+        <input style="width: 100%" type="text-area"  placeholder="Please enter full address"    required   
+					name="t5"   />	<br/><br/>
+        <input style="width: 100%" type="text-area"  placeholder="City"    required   
+					name="t6"   />	<br/><br/>
+        <input style="width: 100%" type="text-area"  placeholder="State"  required   
+					name="t7"   />	<br/><br/>
+        <input style="width: 100%" type="text-area"  placeholder="Pincode"    required   
+					name="t8"   />	<br/><br/>
+
+                    <label style="font-weight: bold" >Occupation</label>  
+                    <br/>
+                    <select style="width: 100%" >
+                        <option>Govt. Job</option>
+                        <option>Private </option>
+                        <option>Self Employed</option>
+                   </select>
+                   <br/>   <br/>  
+                    <label style="font-weight: bold" >Phone Number<span style="color: red" >*</span> </label>  
+                    <br/>
+                    <select style="width: 100%" >
+                        <option>Home</option>
+        
+                        <option>Office </option>
+                        
+                   </select>     
+                   <br/><br/>
+
+                   <input style="width: 100%" type="text"  placeholder="Enter Mobile Number"   required   
+                   name="t9"   />
+                 
+                  
+		<br/> <br/>
+		<input style="width: 100%;" id="b1" type="submit"  value="Submit"  />	
+        <br/><br/>
+        <input   form="form1"  type="checkbox" name="ck1" value="Yes" />	
+        I  agree to the terms and conditions <span style="color: red" >*</span>
+
+	</form>
+</fieldset>
+		
+ </body>
+</html>
+
+
