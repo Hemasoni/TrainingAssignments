@@ -1,0 +1,7 @@
+2) What are  Web Crawlers in SEO? 
+Web Crawler is a bot that downloads the content from the internet and indexes it. The main purpose of this bot 
+is to learn about the different web pages on the internet. This kind of bots is mostly operated by search engines.
+By applying the search algorithms to the data collected by the web crawlers, search engines can provide the 
+relevant links as a response for the request requested by the user. 
+Backlinks are external links. They demonstrate how to switch from site to site or page to page. 
+They help to index the pages on the website correctly. 
