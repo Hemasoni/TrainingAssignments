@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <link rel="Q1.html">
+        <style>
+            fieldset{
+                width: 70%;
+                height: 300px;
+                margin: auto;
+                border: 2px solid black;
+                
+            }
+            
+         
+            
+           </style>
+
+    </head>
+    <body>
+        <br/><br/>
+   
+    <fieldset>
+       
+        <h1 align="center" id="p1"></h1> <br/><br/>
+
+        <h2 align="center" id="p2"></h2>
+        </fieldset>
+            
+        <script>
+     
+         
+             var dataStr = localStorage.getItem("customerdata");
+             var dataObj = JSON.parse(dataStr);
+            
+     
+             if(dataObj==undefined)
+             {
+                 
+                var paraObj = document.getElementById("p1");
+                 paraObj.innerHTML = "Welcome to Guest User";
+                 var paraObj2 = document.getElementById("p2");
+                 paraObj2.innerHTML = "Date is empty";
+
+                 alert("There is no data stored in Local Storage")
+                 
+             }
+             else{
+                var paraObj = document.getElementById("p1");
+                    var paraObj2 = document.getElementById("p2");
+                    paraObj.innerHTML = "Hello " + dataObj.username + ", Welcome to Deloitte Gurgaon" ;
+                    paraObj2.innerHTML = "Joining Date : "+ dataObj.joiningdate;
+                    document.body.style.backgroundColor=dataObj.color;
+
+             }
+             
+     
+             
+         
+                      
+     </script>
+     
+    </body>
+</html>

@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <style>
+            fieldset{
+                width: 40%;
+                margin: auto;
+                background-color: rgb(150, 224, 244);
+            }
+            .button1{
+                background-color: blue;
+                color: white;
+
+            }
+
+            .button1:hover
+            {
+                background-color: black;
+                font-weight: bold;
+                font-size: 18px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center"> Customer Data</h1>
+        
+        <hr/>
+        <fieldset>
+        <legend style="font-weight: bold;">Customer Data</legend>
+        <br/>
+        Customer Name: <input type="text" id="username" name="usernanme"/>
+        <br/><br/>
+        Joining Date: <input type="date" id="joiningdate" name="joiningdate"/>
+        <br/><br/>
+        Favorite Color: <input type="color" id="color" name="color"/>
+        <br/><br/>
+
+        <input type="button" class="button1" value="Save Customer Data" onclick="fn_saveData()" />
+        <input type="button" class="button1" value="Delete Customer Data" onclick="fn_deleteData()" />
+        <br/><br/>
+</fieldset>
+<br/>
+<fieldset>
+<input type="button" class="button1" value="Get Customer Data" onclick="fn_getData()"/>
+<p id="p1"></p>
+</fieldset>
+<script>
+       function fn_saveData()
+       {
+        var txtusername = document.getElementById("username");
+        var txtjoiningdate = document.getElementById("joiningdate");
+        var txtcolor = document.getElementById("color");
+
+        var dataObj={};
+        dataObj.username = txtusername.value;
+        dataObj.joiningdate = txtjoiningdate.value;
+        dataObj.color = txtcolor.value;
+           
+        var resultStr = JSON.stringify(dataObj);
+        
+        localStorage.setItem("customerdata", resultStr);
+
+        alert("Customer Data is stored in Local Storage");
+    }  
+    
+    function fn_deleteData()
+    {
+        localStorage.removeItem("customerdata");
+        alert("Customer Data is removed from Local Storage");
+    }
+
+     function fn_getData()
+     {
+        var dataStr = localStorage.getItem("customerdata");
+
+        if(dataStr==null)
+        {
+            var paraObj = document.getElementById("p1");
+            paraObj.innerHTML = "";
+            alert("There is no data stored in Local Storage")
+            return;
+        }
+        var dataObj = JSON.parse(dataStr);
+        var paraObj = document.getElementById("p1");
+        paraObj.innerHTML = dataObj.username +  "," + dataObj.joiningdate + "," + dataObj.color;
+
+     }
+
+
+</script>
+
+    </body>
+</html>
