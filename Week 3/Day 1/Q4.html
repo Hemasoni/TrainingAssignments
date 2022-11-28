@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"  rel="stylesheet"  />
+    </head>
+
+    <body>
+         <p class="display-2 container  bg-success text-light p-2 text-center mt-1">Image Styles in Bootstrap</p>
+     <span class="m-5">Choose Image Style   </span>
+       <select id="selector" class="text-center" onchange="selectclass()">
+        <option hidden value="hide">Rounded-Circle</option>
+        <option value= "Rounded-Circle">Rounded-Circle </option>
+        <option value= "Rounded">Rounded </option>
+        <option value= "Img-Thumbnail">Img-Thumbnail </option>
+    
+       </select>   
+       <br/>
+       <img id="img1" src="https://th.bing.com/th/id/OIP.JFzKF2TvH6_Lle3-eyqOigHaEp?pid=ImgDet&rs=1" class="m-5" height="300px" width="300px" >
+
+          <script>
+        
+            function  selectclass()
+            {
+            var selectclass = document.getElementById("selector").value;
+            var selectimg=document.getElementById("img1");
+            var x=localStorage.getItem("uid");
+
+            if (x!=undefined)
+            {
+                selectimg.classList.remove(x);
+            }
+            selectimg.classList.add(selectclass);
+            localStorage.setItem("uid", selectclass)
+            }
+
+
+
+     </script>
+       
+   
+    </body>
+
+
+</html>

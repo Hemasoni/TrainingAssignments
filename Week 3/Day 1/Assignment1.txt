@@ -1,0 +1,13 @@
+1. How to add or remove css classes to html elements using JavaScript?
+Adding Single class
+element.classList.add("my-class");
+
+Remove Class
+element.classList.remove("my-class");
+
+
+2. What is CDN? What are the advantages of using CDN urls?
+A Content Delivery Network (CDN) is a collection of computers that keep data copies at several network nodes.
+A well-designed and adequately executed CDN increases data access by increasing bandwidth and reducing access latency.
+Web objects, apps, database queries, downloadable data objects, and video streams are all examples of CDN content.
+
