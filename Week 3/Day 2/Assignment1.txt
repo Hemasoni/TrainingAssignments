@@ -1,0 +1,16 @@
+1. What is Clearfix class? Why do we use?
+The clearfix allows a container to wrap its floated children. Without a clearfix or equivalent styling, 
+a container does not wrap around its floated children and collapses, just as if its floated children were positioned absolutely.
+
+2. How to hide the elements using Bootstrap?
+Content which should be visually hidden, but remain accessible to assistive technologies 
+such as screen readers, can be styled using the .visually-hidden class.
+
+
+3. What is spinner class? How to create spinners in bootstrap?
+The bootstrap spinner is one component to show loading the web pages in the web application. 
+It is a loader that is displayed when a web page or web server delays to display a web application display screen. 
+It is an animated component to show the user when displaying the loading state of the web pages.
+
+<div class = "spinner-border"> </div>
+<div class = "spinner-grow "> </div>
