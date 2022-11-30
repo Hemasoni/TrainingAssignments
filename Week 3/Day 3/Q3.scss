@@ -1,0 +1,28 @@
+.box
+{
+    border: 1px solid darkgray;
+    padding : 10px;
+    margin : 5px;   
+    text-align: center;
+    
+}
+
+$x: 10px;
+
+@for $i from 1 to 7
+{
+    .box-ts#{$i}
+    {
+        font-size :  $x * $i; 
+
+        @if( $i < 4 )
+        {
+            color: red;
+        }
+        @else
+        {
+            color: green;
+        }
+        
+    }
+}

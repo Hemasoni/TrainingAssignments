@@ -1,0 +1,41 @@
+.primary {
+  margin-left: 20px;
+  background-color: blue;
+  width: 500px;
+  height: 200px;
+  color: white;
+  font-size: 35px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.secondary {
+  background-color: green;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  color: white;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.tertiary {
+  margin-left: 20px;
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  color: white;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 35px;
+}/*# sourceMappingURL=Q2.css.map */
