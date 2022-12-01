@@ -1,0 +1,14 @@
+1. What is container class in Bootstrap? When do we use container-fluid class?
+Containers are the most basic layout element in Bootstrap. They are used to contain, pad, and center the content within them. 
+The container-fluid class is used for a full-width container and spans the entire width of the viewport.
+
+2. What is CDN?  What are the advantages of CDN Urls?
+A Content Delivery Network (CDN) is a collection of computers that keep data copies at several network nodes. 
+A well-designed and adequately executed CDN increases data access by increasing bandwidth and reducing access latency. 
+Web objects, apps, database queries, downloadable data objects, and video streams are all examples of CDN content.
+Advantages of Using a CDNI
+Increasing the speed with which a website's pages load.
+Lowering the cost of bandwidth
+Increasing the availability and redundancy of content
+Increasing the safety of your website
+

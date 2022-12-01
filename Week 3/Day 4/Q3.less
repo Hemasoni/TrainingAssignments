@@ -1,0 +1,71 @@
+@import 'Q3';
+@import 'Q3c';
+
+@color:red;
+@size:100px;
+
+
+.links {  
+    margin :auto;
+    font-size: 20px;
+    color: black;
+    background-color: orange;
+    width:200px;
+   &:hover{font-weight: bold;
+font-style: italic;} 
+}        
+    
+
+
+.mixin(@shape) when (@shape="square")
+ {width: @size;
+    height: @size;
+    background-color: @color;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    }
+
+.mixin(@shape) when (@shape="circle")
+    { width: @size;
+        height: @size;
+        background-color: @color;
+        border-radius: 50%;
+        padding: 10px;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;}
+    
+
+.square
+{.mixin('square')}    
+
+.circle
+{.mixin('circle')}    
+
+.btn{
+   border: 2px solid black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    width: 300px;
+    margin:10px;
+    padding: 15px;
+    padding-left:  40px;
+    padding-right:  40px;
+    font-weight: bold;
+}
+.fancybutton{
+    border-radius: 20px;
+    background-color: rgb(57, 60, 61);
+    color: white;
+}
+
+.buttons{
+    .btn();
+    .fancybutton();
+}
+

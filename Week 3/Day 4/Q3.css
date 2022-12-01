@@ -1,0 +1,142 @@
+.links {
+  margin: auto;
+  font-size: 20px;
+  color: black;
+  background-color: orange;
+  width: 200px;
+}
+.links:hover {
+  font-weight: bold;
+  font-style: italic;
+}
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.btn {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  margin: 10px;
+  padding: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-weight: bold;
+}
+.fancybutton {
+  border-radius: 20px;
+  background-color: #393c3d;
+  color: white;
+}
+.buttons {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  margin: 10px;
+  padding: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-weight: bold;
+  border-radius: 20px;
+  background-color: #393c3d;
+  color: white;
+}
+.heading {
+  font-size: 35px;
+  color: blue;
+  font-style: bold;
+  text-align: center;
+  background-color: lightsalmon;
+  margin: auto;
+}
+.paragraph {
+  font-size: 18px;
+  color: green;
+  background-color: lightyellow;
+  margin: auto;
+}
+.links {
+  margin: auto;
+  font-size: 20px;
+  color: black;
+  background-color: orange;
+  width: 200px;
+}
+.links:hover {
+  font-weight: bold;
+  font-style: italic;
+}
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.btn {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  margin: 10px;
+  padding: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-weight: bold;
+}
+.fancybutton {
+  border-radius: 20px;
+  background-color: #393c3d;
+  color: white;
+}
+.buttons {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  margin: 10px;
+  padding: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-weight: bold;
+  border-radius: 20px;
+  background-color: #393c3d;
+  color: white;
+}

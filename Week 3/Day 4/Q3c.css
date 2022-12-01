@@ -1,0 +1,50 @@
+.heading {
+  font-size: 35px;
+  color: blue;
+  font-style: bold;
+  text-align: center;
+  background-color: lightsalmon;
+  margin: auto;
+}
+.paragraph {
+  font-size: 18px;
+  color: green;
+  background-color: lightyellow;
+  margin: auto;
+}
+.links {
+  margin: auto;
+}
+.links:hover {
+  font-weight: bold;
+  font-style: italic;
+}
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  padding: 10px;
+  margin: 10px;
+}
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 10px;
+}
+.heading {
+  font-size: 35px;
+  color: blue;
+  font-style: bold;
+  text-align: center;
+  background-color: lightsalmon;
+  margin: auto;
+}
+.paragraph {
+  font-size: 18px;
+  color: green;
+  background-color: lightyellow;
+  margin: auto;
+}
