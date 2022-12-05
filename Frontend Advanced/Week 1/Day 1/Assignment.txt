@@ -1,0 +1,23 @@
+1. What are the different activities that we do using JavaScript in client side programming?
+a. Web Application
+b. Web development
+c. Mobile Application
+d. Game 
+e. Presentations
+f. Server Application
+g. Web Server
+The other uses of JavaScript are listed as follows:
+a. Client-side validation.
+b. Displaying date and time.
+c. To validate the user input before submission of the form.
+d. Open and close new windows.
+e. To display dialog boxes and pop-up windows.
+f. To change the appearance of HTML documents.
+g. To create the forms that respond to user input without accessing the server.
+
+
+2. What is JavaScript engine for Safari?
+JavaScriptCore, renamed to SquirrelFish and marketed as Nitro, for Safari is a framework that provides a JavaScript engine 
+for WebKit implementations, and provides this type of scripting in other contexts within OS X.
+
+
