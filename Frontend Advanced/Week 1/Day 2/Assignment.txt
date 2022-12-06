@@ -1,0 +1,18 @@
+1. What are the types of Pop up boxes available in JavaScript ?  Find some more details about pop-boxes?
+There are 3 types of pop-up boxes in Javascript
+Alert Box:-
+This popup or dialog box is used to display an alert or warning message to the user. To proceed, the user must click “OK.” We 
+use the alert() method of the window object to show an alert dialog box in JavaScript.
+
+Confirm Box: 
+It is a type of pop-up box that is used to get authorization or permission from the user. 
+The user has to press the ok or cancel button to proceed. It returns true if the user clicks on the “OK” button, otherwise, then false is returned. 
+In JavaScript, we use the window’s object confirm() method to take consent from the user.
+
+
+Prompt Box:-
+It is a dialog or popup box which is used to get some input from the user before allowing them to move on to the next step. 
+This popup box has an input field, “OK” and “Cancel” buttons.
+We use the prompt() method of the window object in JavaScript to take input from the user. The prompt() method takes two 
+parameters: the message you want to display and the default value. The value returned by prompt() is stored in a variable 
+and used to execute some action.

@@ -1,0 +1,46 @@
+<html>
+	<head>
+        <title>Q5</title>
+        <style>
+
+        fieldset{margin: auto;
+            width: 50%}
+
+            ul{padding:3px;}
+
+            li {padding:2px;
+            font-size: 20px;}
+
+        </style>
+    </head>
+	<body>
+	
+		<hr/>
+		
+		<fieldset>
+		<legend>List using loop</legend>
+        <br>
+        <input  type="button"  value="Get Data"  onclick="fn_getData()">
+        <br>
+            <ul id="list" type="none" >
+
+            </ul>
+          </div>
+
+		 </fieldset>		
+		<script>		
+				function  fn_getData()
+				{
+                    var i = 0;
+					var  paraObj  =  document.getElementById("list");		
+                    for (i=0;i<5;i++)
+{
+    paraObj.style.font="bold";                
+    paraObj.innerHTML+="<li> Welcome to Javascript - "  + i + "</li>" ; 
+}
+ 					
+				}		
+		</script>
+		 
+	</body>
+</html>
