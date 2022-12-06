@@ -1,0 +1,54 @@
+<html>
+	<head>
+        <title>Q6</title>
+        <style>
+
+        fieldset{margin: auto;
+            width: 50%}
+
+            ul{padding:3px;}
+
+            li {padding:2px;
+            font-size: 20px;}
+.even
+{color: blue;}
+
+.odd{color: green;}
+
+        </style>
+    </head>
+	<body>
+	
+		<hr/>
+		
+		<fieldset>
+		<legend>Colored List using loop</legend>
+        <br>
+        <input  type="button"  value="Get Data"  onclick="fn_getData()">
+        <br>
+            <ul id="list" type="none" >
+
+            </ul>
+          </div>
+
+		 </fieldset>		
+		<script>		
+				function  fn_getData()
+				{
+                    var i = 0;
+					var  paraObj  =  document.getElementById("list");		
+                    for (i=0;i<5;i++)
+
+{
+    paraObj.style.font="bold"; 
+    if (i%2 == 0) {              
+    paraObj.innerHTML+="<li class = even style= font-size:25px;> Welcome to Javascript - "  + i + "</li>" ;
+    }
+    else {
+        paraObj.innerHTML+="<li class = odd> Welcome to Javascript - "  + i + "</li>";
+    }
+}  }
+		</script>
+		 
+	</body>
+</html>
