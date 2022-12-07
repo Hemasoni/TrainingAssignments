@@ -1,0 +1,122 @@
+<html>
+	<head>
+        <title>Q6</title>
+		<style>
+				.error
+				{
+						color : red; 
+				}
+                fieldset{
+                    width: 40%;
+                    padding: 10px;
+                    margin: 10px;
+                }
+
+		</style>
+	</head>
+	<body>
+		<h3>JavaScript Programming -- Form Validations </h3>
+		<hr/>
+        <fieldset>
+		    <form   id="form1"   name="form1"  onsubmit="fn_submitData()"   
+						  action="javascript:alert('Success!') "   method="get">			
+			
+					Customer Name :  <input  type="text"  id="t1" name="cname" autofocus   />  
+					 <span class="error">*</span>
+					<span id="sp1" class="error"></span>
+					<br/><br/>
+			
+					Source Station :  <input type="text"  id="t2" name="sstation"  />    
+					<span id="sp2" class="error"></span>					
+					<br/><br/>
+
+					Destination Station :  <input type="text"  id="t3" name="dstation"  />    
+					<span id="sp3" class="error"></span>					
+					<br/><br/>
+			
+                    Contact Number: <input type="number" id="n1" name="contact" />
+                    <span class="error">*</span>
+                    <span id="sp4" class="error"></span>
+                    <br/><br/>
+                    
+                    Email: <input type="email" id="e1"  name="email" />
+                    <span class="error">*</span>
+                    <span id="sp5" class="error"></span>
+                    <br/><br/>
+
+					
+			<input  type="submit"  value="Submit"/>		
+            <input type="reset" value="Clear">
+	</form>
+		</fieldset>
+ 
+	 
+		
+		<script> 
+             function fn_submitData()
+			  {
+						var isFormValid = true;
+					
+						var cnameTxtObj  =  document.getElementById("t1"); 		
+				
+						var sstationTxtObj  =  document.getElementById("t2"); 		
+				
+						var dstationTxtObj  =  document.getElementById("t3"); 		
+						var numObj  =  document.getElementById("n1"); 		
+						var emailObj  =  document.getElementById("e1"); 		
+				
+						var cnameErrorSpan  =  document.getElementById("sp1"); 	
+						var sstationErrorSpan  =  document.getElementById("sp2"); 	
+						var dstationErrorSpan  =  document.getElementById("sp3"); 	
+						var numErrorSpan  =  document.getElementById("sp4"); 	
+						var emailErrorSpan  =  document.getElementById("sp5"); 	
+
+                        cnameErrorSpan.innerHTML = "";
+
+                        dstationErrorSpan.innerHTML = "";
+
+                        numErrorSpan.innerHTML = "";
+
+                        emailErrorSpan.innerHTML = "";
+					
+					
+						if( cnameTxtObj.value ==  "" )
+						{					 
+													
+							cnameErrorSpan.innerHTML = "Required";
+								isFormValid =  false;
+						}
+						 
+						if(sstationTxtObj.value == dstationTxtObj.value)
+
+                        {					 
+							dstationErrorSpan.innerHTML = "Source and Destination should not be same";							
+							
+								isFormValid =  false;
+						}
+
+						if(numObj.value.length != "10")
+
+                        {					 
+							numErrorSpan.innerHTML = "Required, Should have 10 digits";							
+							
+								isFormValid =  false;
+						}
+
+                        if( emailObj.value ==  "" )
+						{					 						
+							
+							emailErrorSpan.innerHTML = "Required";	
+                            isFormValid =  false;
+						}
+						
+						if(isFormValid == false)
+						{
+							event.preventDefault();
+                
+						}
+
+			 }			  
+		</script>	
+	</body>
+</html>

@@ -1,0 +1,68 @@
+<html>
+	<head>
+        <title>Q5</title>
+        <style>
+            li{
+                font-size: 20px;
+                padding: 5px;
+
+            }
+
+            select{font-size: 20px;
+            font-weight: bold;}
+        </style>
+    </head>
+	<body>
+		<h3>Display Products based on Selected Category </h3>
+		<hr/>
+		
+		<span style="font-size: 20px; font-weight: bold;">Product Name  : </span> <select id="s1"   onchange="fn_getList()">
+            <option hidden>Laptops</option>
+            <option>Laptops</option>
+            <option>Mobile Phones</option>
+            <option>Sound Systems</option> </select>
+		<br/><br/>
+		
+		<ol type="I" id="list">				 
+		</ol>
+		 
+		<script>	
+		
+		var  Mobile = ["Apple", "Samsung", "Blackberry", "Redme", "Oppo"]; 
+		var  Laptops = ["HP", "Lenovo", "Dell", "Mac", "Asus"]; 
+		var  Sound = ["JBL", "Sony", "Soundbox", "BOAT", "Marshall"]; 
+		
+			function    fn_getList()
+		   {
+                    var  paraObj  =  document.getElementById("list"); 
+                    paraObj.innerHTML ="";
+                    var  producttype = document.getElementById("s1");
+
+                    if(s1.value=="Mobile Phones")
+                    {
+                        for(var i = 0; i < 5;  i++)
+				{					      
+						paraObj.innerHTML +=  "<li>" +  Mobile[i] +  "</li>";	
+                
+				}}
+                    else if(s1.value=="Laptops")
+                    {
+                        for(var i = 0; i < 5;  i++)
+				{					      
+						paraObj.innerHTML +=  "<li>" +  Laptops[i] +  "</li>";	
+                
+				}}
+                    if(s1.value=="Sound Systems")
+                    {
+                        for(var i = 0; i < 5;  i++)
+				{					      
+						paraObj.innerHTML +=  "<li>" +  Sound[i] +  "</li>";	
+                
+				}}
+							
+			}
+			
+		</script>
+		</body>
+</html>
+

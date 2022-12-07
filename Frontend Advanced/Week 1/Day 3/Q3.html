@@ -1,0 +1,73 @@
+<html>
+    <head>
+		<title>Q3</title>
+	</head>
+    <body>
+        <h3>JavaScript Programming -- Dynamic Operations on Arrays </h3>
+        <hr/>
+          Skill Name  :  <input type="text"  id="t1"  />
+        <br/><br/>
+        
+        <input type="button"  value="Get Data"  onclick="fn_getData()"  />
+        <input type="button"  value="Add Data"  onclick="fn_addData()"  />
+        <input type="button"  value="Remove Data"  onclick="fn_removeData()"  />
+        
+        <ol  id="list1">                 
+        </ol>
+        <script>    
+	
+        var  skillsArray = ["HTML5", "CSS3", "BOOTSTRAP", "ANGULAR", "REACT"]; 
+        
+            function    fn_getData()
+           {
+                var  str  = "";
+                for(var i = 0; i < skillsArray.length;  i++)
+                {                         
+                        str     +=  "<li>" +  skillsArray[i] +  "</li>";    
+                }
+             
+                var  listObj  =  document.getElementById("list1"); 
+                listObj.innerHTML = str;                
+            }
+            
+            
+            function fn_addData()
+            { 
+                    var txtObj  =  document.getElementById("t1");
+                    var result=false;
+                    for(var i=0;i<skillsArray.length;i++)
+                    {
+                    if(txtObj.value.toUpperCase()==skillsArray[i]) 
+                    {
+                      alert("Duplicate Values");
+                      result=true;
+                      break;
+                        
+                    }                   
+                    } 
+                    if(result==false)
+                    {
+                        skillsArray.push( txtObj.value.toUpperCase());
+                    }
+                    fn_getData();
+            }
+            
+            
+                function fn_removeData()
+            { 
+                    var txtObj  =  document.getElementById("t1");                   
+                    var index =  skillsArray.indexOf( txtObj.value.toUpperCase() );
+                    if(index==-1)
+                    {
+                        alert("Item not Exist");
+                    }
+                    else
+                    {
+                    skillsArray.splice( index,  1);  
+                    }
+                    fn_getData();
+            }
+            
+        </script>
+    </body>
+</html>
