@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4</title>
+</head>
+<body>
+    
+
+    <script>
+        var citiesArray  = [ "Hyderabad ", "Mumbai",  "Bangalore", "Gurgaon"];
+    
+        var upperCase= citiesArray.map(uppercase);
+
+        function uppercase(str)
+        {return str.toUpperCase();}
+
+     document.writeln("Original array: " + citiesArray);
+     document.writeln("<br><br>Converted to uppercase: " + upperCase);
+
+
+     var firstthree= citiesArray.map(function(str)
+     {
+		return str.substring(0,3);
+
+    })
+
+    document.writeln("<br><br>Only first three letters: " + firstthree);
+
+
+var replacer= citiesArray.map(str => str.replaceAll('a', '@'));
+document.writeln("<br><br>Replacing 'a' with '@': " + replacer);
+
+           
+    </script>
+</body>
+</html>

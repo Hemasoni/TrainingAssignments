@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center">Web Page for Data</h1>
+    <hr><br>
+    <button type="button" onclick="f1()">Get Data</button>
+    <br><br>
+    <table id="tab" border="2" cellpadding="5" cellspacing="0">
+        <tr>
+            <th>Id</th>
+            <th>Email</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Avatar</th>
+        </tr>
+    </table>
+    <br>
+    <hr><br>
+    <button type="button" onclick="f2()" >Get Data</button>
+    <br><br>
+    <table id="tab2" border="2" cellpadding="5" cellspacing="0">
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>Country</th>
+        </tr>
+    </table>
+    <script>
+         var arr=[
+            {"id":1,"email":"george.bluth@reqres.in","first_name":"George","last_name":"Bluth","avatar":"https://reqres.in/img/faces/1-image.jpg"},
+            {"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},
+            {"id":3,"email":"emma.wong@reqres.in","first_name":"Emma","last_name":"Wong","avatar":"https://reqres.in/img/faces/3-image.jpg"},
+            {"id":4,"email":"eve.holt@reqres.in","first_name":"Eve","last_name":"Holt","avatar":"https://reqres.in/img/faces/4-image.jpg"},
+            {"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},
+            {"id":6,"email":"tracey.ramos@reqres.in","first_name":"Tracey","last_name":"Ramos","avatar":"https://reqres.in/img/faces/6-image.jpg"}
+        ];
+        var arr2=[ {"Name":"Alfreds Futterkiste","City":"Berlin","Country":"Germany"},
+         {"Name":"Ana Trujillo Emparedados y helados","City":"México D.F.","Country":"Mexico"},
+          {"Name":"Antonio Moreno Taquería","City":"México D.F.","Country":"Mexico"}, 
+          {"Name":"Around the Horn","City":"London","Country":"UK"},
+           {"Name":"B's Beverages","City":"London","Country":"UK"}, 
+           {"Name":"Berglunds snabbköp","City":"Luleå","Country":"Sweden"},
+            {"Name":"Blauer See Delikatessen","City":"Mannheim","Country":"Germany"}, 
+            {"Name":"Blondel père et fils","City":"Strasbourg","Country":"France"}, 
+            {"Name":"Bólido Comidas preparadas","City":"Madrid","Country":"Spain"},
+             {"Name":"Bon app'","City":"Marseille","Country":"France"}, 
+             {"Name":"Bottom-Dollar Marketse","City":"Tsawassen","Country":"Canada"}, 
+             {"Name":"Cactus Comidas para llevar","City":"Buenos Aires","Country":"Argentina"},
+              {"Name":"Centro comercial Moctezuma","City":"México D.F.","Country":"Mexico"},
+               {"Name":"Chop-suey Chinese","City":"Bern","Country":"Switzerland"}, 
+               {"Name":"Comércio Mineiro","City":"São Paulo","Country":"Brazil"} ];
+
+
+        function f1()
+        {
+        var tableObj=document.getElementById("tab");
+        tableObj.innerHTML=`<tr><th>Id</th><th>Email</th><th>First Name</th><th>Last Name</th><th>Avatar</th></tr>`;
+        for(var i in arr)
+        {
+        tableObj.innerHTML+=`<tr><td>${arr[i].id}</td><td>${arr[i].email}</td><td>${arr[i].first_name}</td><td>${arr[i].last_name}</td><td>${arr[i].avatar}</td><tr>`;
+        }
+        }
+        function f2()
+        {
+        var tableObj2=document.getElementById("tab2");
+        tableObj2.innerHTML=`<tr><th>Name</th><th>City</th><th>Country</th></tr>`;
+        for(var item of arr2)
+        {
+        tableObj2.innerHTML+=`<tr><td>${item.Name}</td><td>${item.City}</td><td>${item.Country}</td></tr>`;
+        }
+        }
+
+    </script>
+</body>
+</html>

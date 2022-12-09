@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            padding:5px;
+            margin-right:10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Three Object Methods</h1>
+    <hr>
+    <br>
+    <button id="btn" onclick="fn()">Get data Constructor Function</button>
+    <button onclick="fn1()">Get Data Empty Object</button>
+    <button onclick="fn2()">Get Data Object Creator</button>
+    <br><br>
+    <table id="tabb" border="2" cellpadding="5" cellspacing="0">
+        <tr>
+            <th>Emp No.</th>
+            <th>Emp Name</th>
+            <th>Job</th>
+            <th>Salary</th>
+            <th>Department No.</th>
+        </tr>
+    </table>
+   
+    <script>
+        var tableObj=document.getElementById("tabb");
+        function fn1()
+        {
+        var obj1={Empno:193405,name:"Sahil",job:"Analyst",salary:450909,depart:4};
+        tableObj.innerHTML+=`<tr><td>${obj1.Empno}</td><td>${obj1.name}</td><td>${obj1.job}</td><td>${obj1.salary}</td><td>${obj1.depart}</td></tr>`;
+        }
+
+        function fn2()
+        {
+        var obj2={};
+        obj2.Empno=199303;
+        obj2.name="Samridhi";
+        obj2.job="Analyst";
+        obj2.depart=3;
+        obj2.salary=354343;
+        tableObj.innerHTML+=`<tr><td>${obj2.Empno}</td><td>${obj2.name}</td><td>${obj2.job}</td><td>${obj2.salary}</td><td>${obj2.depart}</td></tr>`;
+        } 
+        function Obj()
+        {
+            this.sid=294055;
+            this.name="Hemant";
+            this.job="Analyst";
+            this.salary=343224;
+            this.depart=2;
+        }
+        function fn()
+        {
+        
+        var obj3=new Obj();
+        tableObj.innerHTML+=`<tr><td>${obj3.sid}</td><td>${obj3.name}</td><td>${obj3.job}</td><td>${obj3.salary}</td><td>${obj3.depart}</td></tr>`;
+        }
+
+    </script>
+</body>
+</html>

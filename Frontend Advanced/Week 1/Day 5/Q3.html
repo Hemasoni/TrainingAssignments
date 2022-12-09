@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center">Get the details of employee</h1>
+    <hr><br>
+    Employee No. : 
+    <input type="number" id="empno">
+    <br><br>
+    Employee Name :
+    <input type="text" id="empname">
+    <br><br>
+    Job Description : 
+    <input type="text" id="job">
+    <br><br>
+    Salary : 
+    <input type="number" id="sal">
+    <br><br>
+    <button type="button" onclick="fn()">ADD DETAILS</button>
+    <br><br>
+
+    <script>
+        var noobj=document.getElementById("empno");
+        var nameobj=document.getElementById("empname");
+        var jobobj=document.getElementById("job");
+        var salobj=document.getElementById("sal");
+          var table=document.createElement("table");
+          table.setAttribute("id","tab");
+          document.body.appendChild(table);
+          table.setAttribute("border","2");
+          table.setAttribute("cellpadding","5");
+          table.setAttribute("cellspacing","0");
+          table.innerHTML="<tr><th>Employee No.</th><th>Employee Name</th><th>Job</th><th>Salary</th></tr>"
+        function fn()
+        {
+            
+            var row=table.insertRow(-1);
+            var cell=row.insertCell(-1);
+            cell.innerHTML=noobj.value;
+          
+            var cell=row.insertCell(-1);
+            cell.innerHTML=nameobj.value;
+            
+            var cell=row.insertCell(-1);
+            cell.innerHTML=jobobj.value;
+            
+            var cell=row.insertCell(-1);
+            cell.innerHTML=salobj.value;
+        }
+
+    </script>
+
+</body>
+</html>

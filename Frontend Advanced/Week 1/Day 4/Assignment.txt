@@ -1,0 +1,35 @@
+1. What is Regular Expression in JavaScript? How to validate email id using Regular Expression?
+Regular expressions are sequences of metacharacters, denoting a pattern. These patterns can be of various kinds: 
+a mix of letters with digits, special characters and even different language characters.
+Syntax-
+<script type="text/javascript">
+function validateEmail(email)
+{
+ var reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+ if (reg.test(email)){
+ return true; }
+ else{
+ return false;
+ }
+} 
+</script>
+
+2. What is map() method in Array?   How to use map() method?
+The map() method in JavaScript creates an array by calling a specific function on each element present in the 
+parent array. It is a non-mutating method. Generally map() method is used to iterate over an array and calling 
+function on every element of array.
+Syntax:
+array.map(function(currentValue, index, arr), thisValue).
+
+3. Find the details about following methods of Array:
+                    Find(),  FindIndex(),  Filter()
+The find() method returns the value of the first element that passes a test and does not execute the
+function for empty elements.
+SYNTAX:array.find(function(currentValue, index, arr),thisValue)
+
+The findIndex() method executes a function for each array element.
+SYNTAX:array.findIndex(function(currentValue, index, arr), thisValue)
+
+The filter() method creates a new array filled with elements that pass a test provided by a function.
+SYNTAX: array.filter(function(currentValue, index, arr), thisValue)
+

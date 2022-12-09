@@ -1,0 +1,73 @@
+<html>
+	<head>
+        <title>Q3</title>
+		<style>
+			
+		</style>
+	</head>
+	<body>
+
+        
+<fieldset >
+    <legend>x^y</legend>
+    
+   x:  <input type="x"  id="n1"   />
+    <br/><br/>
+
+    y:  <input type="y"  id="n2"   />
+    <br/><br/>
+    <input  type="button"  value="Calculate Power"  onclick="fn_getPower()"  />
+    <p  id="p1"></p>    
+</fieldset>	
+<hr/>
+<fieldset >
+    <legend>String Length</legend>
+    
+   Type a sentence  <input type="text"  id="t1"   />
+    <br/><br/>
+    <input  type="button"  value="Get String Length"  onclick="fn_getStrlength()"  />
+    <p  id="p2"></p>    
+</fieldset>	
+
+		<hr/>
+        <p></p>
+        <script>	
+        
+        var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        var even = [];
+
+        arr.forEach(number => {
+        if (number % 2 === 0) {
+        even.push(number);
+          }
+        })
+     
+for (i = 0; i < arr.length; i++)
+  document.writeln( arr[i] + "<br>");
+        document.writeln("<br> No. of even numbers: " + even.length);  
+
+    function fn_getPower()
+    {
+        var x = document.getElementById("n1").value;
+        var y = document.getElementById("n2").value;
+        var  paraObj  =  document.getElementById("p1");	
+        var j=Math.pow(x,y);
+
+       
+        paraObj.innerHTML = "x^y = " + j;  
+        
+    }
+
+function fn_getStrlength()
+{
+    var str = document.getElementById("t1").value;
+        var len = str.length;
+        var  paraObj1  =  document.getElementById("p2");	
+        
+        paraObj1 .innerHTML = "String Length = " + len;  
+
+}
+
+		</script>	
+	</body>
+</html>
