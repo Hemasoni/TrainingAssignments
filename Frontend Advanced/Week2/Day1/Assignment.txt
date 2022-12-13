@@ -1,0 +1,7 @@
+1. How to add / remove events dynamically without using event attributes (eg:  onclick, ...)
+JavaScript allows you to attach event listeners to HTML elements so that you can run a certain function when an event is 
+triggered. Some examples of events are when a button is “clicked” or when the mouse pointer is moved to touch the element.
+
+The built-in method addEventListener() allows you to attach an event listener to an HTML element. It accepts two parameters:
+the event type to listen to and the callback function to run when the event is triggered:
+        Element.addEventListener.

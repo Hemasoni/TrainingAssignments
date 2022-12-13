@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2</title>
+</head>
+<body>
+    
+<h3> Data Filtration using Javascript </h3>
+	<hr/>
+
+    <input type="text" id="n1">
+<input type="button" onclick="fn_findbyempno()"  value="Find by Empno" />
+<input type="button"  onclick="fn_findbyjob()"  value="Find by Job" />
+<br/><br/>
+<table id="t1" cellspacing="1" cellpadding="8" border="2px solid black">
+    <tr> <th>Empno</th> <th>Ename</th> <th>Job</th> <th>Salary</th><th>Deptno</th></tr>
+</table>
+
+
+	 
+	<script>
+		
+        var empdata = [{Empno:1025 , Ename:"Hemant" , Job:"Analyst", Salary:50000, Deptno:10},
+        {Empno:1026 , Ename:"Kritika" , Job:"Analyst", Salary:75000, Deptno:20}, {Empno:1027 , Ename:"Sahil" , Job:"Marketing", Salary:80000, Deptno:30}, {Empno:1028 , Ename:"Samridhi" , Job:"Full Stack", Salary:100000, Deptno:40}];
+
+
+
+    
+		function   fn_findbyempno()		
+        {
+            
+            var u1 = document.getElementById("n1").value;
+            var tableObj = document.getElementById("t1");
+            tableObj.innerHTML ="<tr> <th>Empno</th> <th>Ename</th> <th>Job</th> <th>Salary</th><th>Deptno</th></tr>";
+       
+                var Arr1 = empdata.find(i=>i.Empno == u1);
+                
+            var newRow = tableObj.insertRow();
+
+            var cell = newRow.insertCell();
+                cell.innerHTML = Arr1.Empno;
+            var cell = newRow.insertCell();
+                cell.innerHTML = Arr1.Ename;
+            var cell = newRow.insertCell();
+                cell.innerHTML = Arr1.Job;
+            var cell = newRow.insertCell();
+                cell.innerHTML = Arr1.Salary;
+            var cell = newRow.insertCell();
+                cell.innerHTML = Arr1.Deptno;
+            }
+
+
+        
+
+
+    function   fn_findbyjob()		
+        {
+        
+            var u1 = document.getElementById("n1").value;
+            var tableObj = document.getElementById("t1");
+            tableObj.innerHTML ="<tr> <th>Empno</th> <th>Ename</th> <th>Job</th> <th>Salary</th><th>Deptno</th></tr>";
+        var Arr2 = empdata.filter(i=>i.Job == u1);
+                for (var Arr3 of Arr2 ){
+                    var newRow = tableObj.insertRow();
+
+var cell = newRow.insertCell();
+    cell.innerHTML = Arr3.Empno;
+var cell = newRow.insertCell();
+    cell.innerHTML = Arr3.Ename;
+var cell = newRow.insertCell();
+    cell.innerHTML = Arr3.Job;
+var cell = newRow.insertCell();
+    cell.innerHTML = Arr3.Salary;
+var cell = newRow.insertCell();
+    cell.innerHTML = Arr3.Deptno;
+    }
+}
+    
+
+	</script>	 
+
+</html>
+
+
+
+
