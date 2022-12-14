@@ -1,0 +1,78 @@
+<html>
+<head>
+    <style>
+        th{text-align: left;}
+    </style>
+</head>
+<body>
+<h3>Using Fetch in JavaScript</h3>
+	<hr/> 
+	<button  onclick="fn_getData()">Get Data </button>
+	<br/><br/>
+	
+
+    <table id="t1" cellspacing="0" cellpadding="5" >
+   
+    </table>
+
+	 
+	<script>	
+   
+        async function  fn_getData()
+			{
+			   try 
+				 { var tableObj = document.getElementById("t1")
+        
+        
+        tableObj.setAttribute("border","2");
+
+
+
+                    let url = "https://reqres.in/api/users";
+        
+					let response =  await fetch(url);
+                    let x = await response.json();
+                    displayData(x.data);
+				 }
+
+				
+
+				 catch(error)
+				 {tableObj.innerHTML="";
+                 tableObj.innerHTML+= "<tr><td>Error: Could not fetch data </td></tr>";
+				 }			
+				 
+				 function displayData(y)
+	{
+	
+		tableObj.innerHTML ="<tr> <th>id</th> <th>email</th> <th>first_name</th> <th>last_name</th><th>avatar</th></tr>";
+				for(let item of  y)
+					{
+                        
+var newRow = tableObj.insertRow();
+
+var cell = newRow.insertCell();
+    cell.innerHTML = item.id;
+var cell = newRow.insertCell();
+    cell.innerHTML = item.email;
+var cell = newRow.insertCell();
+    cell.innerHTML = item.first_name;
+var cell = newRow.insertCell();
+    cell.innerHTML = item.last_name;
+var cell = newRow.insertCell();
+cell.innerHTML= `<img src="${item.avatar}">`;
+				};
+		};
+
+
+			}
+
+	
+    
+	</script>	 
+</body>
+</html>
+
+
+
+

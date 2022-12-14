@@ -1,0 +1,12 @@
+1. What is setInterval()  and setTimeout() methods in JavaScript?
+setTimeout() calls a method after a certain period of milliseconds have passed.
+The method is only called once. This method lets you introduce delays into your code.
+Syntax: window.setTimeout(function, time);
+
+setInterval() method calls a function repeatedly. A specified delay is set between each time a function is called.
+Syntax: window.setInterval(function, time);
+
+2. What is Asynchronous?
+Functions running in parallel with other functions are called asynchronous
+Asynchronous JavaScript programming makes it possible to express waiting for long-running actions without freezing the program during these actions.
+JavaScript environments typically implement this style of programming using callbacks; functions that are called when an action completes. 
