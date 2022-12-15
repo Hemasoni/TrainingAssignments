@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q7</title>
+    <script src=https://code.jquery.com/jquery-3.3.1.min.js></script>
+    <style>
+        h2 {
+            color:white;
+            padding: 10px;
+        }
+        * {
+            background-color: black;
+        }
+        div {
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        fieldset{
+            margin: auto;
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+    <h2 align="center">Timer using jQuery</h2>
+    <hr/>
+    <br><br>
+<fieldset>
+    <p id="p1" style="width:50%; font-size:50px; margin:auto; text-align:center; color:white; letter-spacing: 2px; ">00:00:00</p><br/>
+
+    <div>
+    <input type="button" id="b1" value="Start" style="margin-right:30px; text-align:center; font-size:40px; padding:20px; background-color:green; border-radius:20px; border:none; color:white; font-weight:bold;"/>
+    <input type="button" id="b2" value="Clear" style="margin-left:30px; text-align:center; font-size:40px; padding:20px; background-color:red; border-radius:20px; border:none; color:white; font-weight:bold;"/>
+    </div>
+</fieldset>
+    
+    <script>
+        var hours = 0;
+        var minutes = 0;
+        var seconds = 0;
+        function display()
+        {
+            $("#p1").html(digits(hours) + ":" + digits(minutes) + ":" + digits(seconds));
+        }
+        function digits(x)
+        {
+        if(x<10)
+        {
+            return "0"+x;
+        }
+        return x;
+    }
+         
+    
+    $("#b1").click(function()
+           {
+           
+        $('#b1').prop('disabled', true);
+
+            x=setInterval(function()
+            {
+                seconds++;
+                if(seconds > 59)
+                {
+                    minutes++;
+                    seconds = 0;
+                    }
+                if(minutes > 59)
+                {
+                    minutes = 0;
+                    seconds = 0;
+                    hours++;
+                    }
+                    display();
+                 },1000);
+           });
+
+
+           $("#b2").click(function()
+           {$('#b1').prop('disabled', false);
+
+            clearInterval(x);
+               hours = 0;
+                minutes = 0;
+                seconds = 0;
+                display();           
+           });
+    </script>
+</body>
+</html>

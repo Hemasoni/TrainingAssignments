@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4</title>
+    <script  src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+</head>
+<body>
+    <h2>Get Produt Details</h2>
+    <hr>
+    <fieldset>
+        <legend>Product Details</legend><br>
+Product Name: <input type="text" id="t1" name="t1" /> <br><br>
+Unit Price: <input type="text" id="t2" name="t2"/> <br><br>
+Quantity: <input type="text"  id="t3" name="t3"/> <br><br>
+Total Amount: <input type="text" readonly id="t4" name="t4" /> <br><br>
+<input type="button" value="Calculate" id="b1"/><br>
+    </fieldset>
+    
+    <script>
+
+        $("fieldset").css("width", "35%");
+        $(document).ready(function()
+        {
+            $("#b1").click(function()
+            {
+                let a = $("#t2").val();
+                let b = $("#t3").val();
+                var c = a*b;
+                if(b>10)
+                {
+                    let c = a* (0.9*b);
+                    $("#t4").val(c);
+                }
+                else
+                {
+                    $("#t4").val(c);
+                }
+            });
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q8</title>
+    <script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</head>
+	<body>
+		<h2> </h2>
+		<hr/> 
+		
+		<br/><br/>
+		
+        <img   src="Image1.jpg"  class="c1"  border="2"  width="80"  height="60"  />
+		<img   src="Image2.jpg"  class="c1"  border="2"  width="80"  height="60"  />
+		<img   src="Image3.jpg"  class="c1"  border="2"  width="80"  height="60"  />
+		<img   src="Image4.jpg"  class="c1"  border="2"  width="80"  height="60"  />
+		<img   src="Image0.jpg"  class="c1"  border="2"  width="80"  height="60"  />
+
+		 
+		<hr/>
+		<img   src="Image1.jpg"  id="bigImg"  border="2"  width="340"  height="340"  />
+
+		<script>	
+        
+
+			$(document).ready(function()
+		           	
+        
+					{ y=setInterval(function() 
+                        {
+                           var x = Math.floor((Math.random() * 10));
+                           var z = x%5;
+				     						  
+						  $("#bigImg").attr("src", "Image"+z+".jpg");		
+                        },Math.floor((Math.random()*1000)));
+					});
+	
+		</script>
+ 
+	</body>
+</html>
