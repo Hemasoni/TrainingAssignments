@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <title>Q3</title>
+
+    <style>
+        p{
+            font-size:20px;
+        }
+        .c1{font-weight: bold;}
+
+        .c2{
+            text-decoration: underline;
+        }
+        .c3{
+            font-style: italic;
+        }
+        .b1{background-color: blue;
+            border:"2px solid black"; 
+            font-weight:"bold";}
+    </style>
+</head>
+
+<body>
+    <h2>Applying styles using Jquery</h2>
+    <hr>
+    <input type="button" id="b1" value="B"/>
+    <input type="button" id="b2" value="U"/>
+    <input type="button" id="b3" value="I"/>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptatem sit incidunt neque perspiciatis ratione, itaque sequi temporibus molestiae maxime harum repudiandae inventore tempore odio architecto fugiat aut veritatis illo.</p>
+
+<script>
+
+$("#b1").click(function()
+{
+$("p").toggleClass("c1");
+$("#b1").toggleClass("b1");
+});
+
+$("#b2").click(function()
+{
+$("p").toggleClass("c2");
+$("#b2").toggleClass("b1");
+
+});
+
+$("#b3").click(function()
+{
+$("p").toggleClass("c3");
+$("#b3").toggleClass("b1");
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+1.How to add CSS class to html tag using jQuery?We
+We can use the .addClass() method to add the specified class to an element. It works by manipulating the class attribute of the element. 
+$(document).ready(function() {
+    $("#container").addClass("main");
+});
+
+ 
+2.How to apply effect based on width property?
+ 
+$(selector).animate( object,  duration );
+$(selector).animate( object,  duration, callback );
+ 
+$(selector).animate( {prop:value, ..... },  interval );
+$(selector).animate( {width :  "200px"},  2000 );

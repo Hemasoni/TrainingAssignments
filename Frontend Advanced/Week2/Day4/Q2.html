@@ -1,0 +1,96 @@
+<html>
+ <head> 
+    <title>Q2</title>
+ </head>
+ <body>
+	<h3> jQuery Programming  - DOM Traversing</h3>
+	<hr />
+		
+	 <input id="t1" placeholder="product name" />
+	<input id="t2" placeholder="unit price " />
+	<input id="t3" placeholder="quantity" />
+	<br></br> 
+
+ <table id="table1" border="2" width="500px">
+	<tr>
+		<th></th>
+		<th>Product Name</th>
+		<th>Unit Price</th>
+		<th>Units In Stock</th>
+	</tr>
+	<tr>
+		<td><a id="a1" href="#">Select </a>/<a id="a2" href="#">Remove</a></td>		
+		<td>Printer</td>
+		<td>2500.00</td>
+		<td>20</td>
+	</tr>
+	<tr>
+        <td><a id="a1" href="#">Select </a>/<a id="a2" href="#">Remove</a></td>	
+		<td>4GB-RAM</td>
+		<td>1200.00</td>
+		<td>23</td>
+	</tr>	 
+	<tr>
+        <td><a id="a1" href="#">Select </a>/<a id="a2" href="#">Remove</a></td>	
+		<td>Printer</td>
+		<td>2500.00</td>
+		<td>20</td>
+	</tr>
+	<tr>
+        <td><a id="a1" href="#">Select </a>/<a id="a2" href="#">Remove</a></td>	
+		<td>1TB Samsung HDD</td>
+		<td>4500.00</td>
+		<td>10</td>
+	</tr>
+	<tr>
+        <td><a id="a1" href="#">Select </a>/<a id="a2" href="#">Remove</a></td>	
+		<td>32-GB Kingston USB</td>
+		<td>800.00</td>
+		<td>35</td>
+	</tr>
+	<tr>
+        <td><a id="a1" href="#">Select </a>/<a id="a2" href="#">Remove</a></td>	
+		<td>Wifi Router</td>
+		<td>1800.00</td>
+		<td>15</td>
+	</tr> 
+	</table>  
+		 
+ 
+	
+	<script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+	
+	<script>
+	
+		$(document).ready(function()
+		{
+				
+			 $("#table1 #a1").click(function()
+			 {      
+					let pname  =   $(this).parent().siblings().eq(0).text();
+					let price  =   	  $(this).parent().siblings().eq(1).text();
+					let qty  =   		  $(this).parent().siblings().eq(2).text();
+					
+					$("#t1").val(  pname  );
+					$("#t2").val(  price  );
+					$("#t3").val(  qty  );
+					
+					$(this).parent().parent().css("background-color", "pink");
+                    $(this).parent().parent().siblings().css("background-color", "white");
+			 });
+
+			 $("#table1 #a2").click(function()
+			 {
+					
+			
+					$(this).parent().parent().remove();
+			 });
+		 
+		});
+		
+        
+
+	</script>
+	
+ </body>
+</html>

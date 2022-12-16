@@ -1,0 +1,82 @@
+<html>
+ <head> 
+    <title>Q4</title>
+ </head>
+ <body>
+	<h3>Applying Different Background Colors</h3>
+	<hr />
+		
+	  <table id="table1" border="2" width="400px">
+	<th>Product Name</th>
+		<th>Unit Price</th>
+		<th>Units In Stock</th>
+	</tr>
+	<tr>
+		<td>Printer</td>
+		<td>2500.00</td>
+		<td>20</td>
+	</tr>
+	<tr>
+		<td>4GB-RAM</td>
+		<td>1200.00</td>
+		<td>23</td>
+	</tr>
+	<tr>
+		<td>1TB Samsung HDD</td>
+		<td>4500.00</td>
+		<td>0</td>
+	</tr>
+	<tr >
+		<td>32-GB Kingston USB</td>
+		<td>800.00</td>
+		<td>35</td>
+	</tr>
+	<tr >
+		<td>Wifi Router</td>
+		<td>1800.00</td>
+		<td>0</td>
+	</tr>  
+	 
+	 
+	 
+	<tr >
+		<td>1TB Samsung HDD</td>
+		<td>4500.00</td>
+		<td>0</td>
+	</tr>
+	<tr >
+		<td>32-GB Kingston USB</td>
+		<td>800.00</td>
+		<td>35</td>
+	</tr>
+	<tr >
+		<td>Wifi Router</td>
+		<td>1800.00</td>
+		<td>0</td>
+	</tr>  
+ </table> 
+		 
+ 
+	
+	<script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+	
+	<script>
+	
+		$(document).ready(function()		
+		{             
+				$("#table1   tr:last").css("background-color", "lightgray");  
+
+				$("#table1 tr").each( function() 
+                {
+                if (($(this).children().eq(2).html()) == 0)
+                $(this).css("background-color", "pink");
+                else {$(this).css("background-color", "lightgreen");}
+            });
+            $("#table1   tr:first").css("background-color", "lightblue");
+				
+		});
+				
+	</script>
+	
+ </body>
+</html>

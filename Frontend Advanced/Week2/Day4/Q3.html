@@ -1,0 +1,71 @@
+<html>
+ <head> 
+    <script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <title>Q3</title>
+ </head>
+ <body>
+	 <h2>Product Details</h2>
+<hr> 
+
+<input type="text" id="t1" placeholder="Product Name" />
+<br>
+<input type="text" id="t2" placeholder="Company" />
+<br>
+<input type="text" id="t3" placeholder="Price" />
+<br><br>
+<input type="button"  id="b1" value="Add Data" />
+
+<input type="button"  id="b2" value="Clear" />
+<br></br>
+
+ <table  id="table1" border="2" width="400px">
+ 
+	<tr>
+		<th>Product Name</th>
+		<th>Company</th>
+		<th>Price</th>
+	</tr>
+	<tr>
+		<td>Guitar</td>
+		<td>Yamaha</td>
+		<td>20000</td>
+	</tr>
+	<tr>
+		<td>Phone</td>
+		<td>Samsung</td>
+		<td>45000</td>
+	</tr> 
+	<tr>
+		<td>Camera</td>
+		<td>Sony</td>
+		<td>50000</td>
+	</tr>
+	</table>  
+
+	<script>
+      
+    $(document).ready(function()
+    {
+            $("#b1").click(function()  
+            { 
+                var x = $("#t1").val();
+                  
+        var y = $("#t2").val();
+        var z = $("#t3").val();
+                var str  = "<tr>  <td>" + x + "</td>  <td>" + y + "</td>  <td>" + z + "</td>  </tr>";	
+                     $("#table1").append(str);	   
+            });
+
+            $("#b2").click(function()  
+            { 
+            $("#t1").val('');
+                  
+        var y = $("#t2").val('');
+        var z = $("#t3").val('');
+
+                
+            });
+    })
+	</script>
+ </body>
+</html>
