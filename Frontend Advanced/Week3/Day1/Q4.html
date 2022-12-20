@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4</title>
+    <script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <h2> Usage String Methods in jQuery Application</h2>
+    <br>
+	<hr />	
+    <input type="button" id="b1" value="Get Data">
+<br><br>
+ <table id="t1" cellpadding="5" cellspacing="0"></table>
+
+   <script>
+
+        $(document).ready(function(){
+          function month(x)
+
+            {
+
+                switch(x)
+
+                {
+
+                    case 1:
+
+                        return "jan";
+
+                    case 2:
+
+                        return "feb";
+
+                    case 3:
+
+                        return "Mar";
+
+                    case 4:
+
+                        return "Apr";
+
+                    case 5:
+
+                        return "May";
+
+                    case 6:
+
+                        return "Jun";
+
+                    case 7:
+
+                        return "Jul";
+
+                    case 8:
+
+                        return "Aug";
+
+                    case 9:
+
+                        return "Sep";
+
+                    case 10:
+
+                        return "Oct";
+
+                    case 11:
+
+                        return "Nov";
+
+                    case 12:
+
+                        return "Dec";
+
+                }
+
+            }
+
+            $("#b1").click(function(){
+
+                var customerObj = {  cardNumber  :   1234456778997896,  chName : "Narasimha Rao",  cardType : "Visa",  expireMonth : 12,  expireYear : 2023};
+                var cnum=customerObj.cardNumber.toString();
+                var arr=cnum.split('');
+                var finalnumber='';
+                for(let i=0;i<arr.length-4;i++)
+                {      
+                    if(i==3 || i==7 || i ==11)
+                    {
+                        finalnumber+="-";
+                    }
+                    else
+                      {finalnumber+='*';}
+                }
+                for(let j=arr.length-4; j<arr.length; j++)
+                {
+                finalnumber+=arr[j];}
+                tablestr="";
+                tablestr+="<tr><td>Credit Card Number</td>";
+                tablestr+="<td>"+finalnumber+"</td></tr>";
+                tablestr+="<tr><td>Customer Name</td>";
+                tablestr+="<td>"+customerObj.chName+"</td></tr>";
+                tablestr+="<tr><td>Card Type</td>";
+                tablestr+="<td>"+(customerObj.cardType).toUpperCase()+"</td></tr>";
+                tablestr+="<tr><td>Expiry Date</td>";
+                tablestr+="<td>"+month(customerObj.expireMonth)+" "+(customerObj.expireYear)+"</td></tr>";
+                $("#t1").html(tablestr);
+                $("#t1").attr("border", "2px solid black");
+            })
+        })
+    </script>
+
+</body>
+
+</html>

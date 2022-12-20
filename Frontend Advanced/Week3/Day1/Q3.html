@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3</title>
+    
+    <style>
+		.error
+		{
+			color : red;
+		}
+	</style>
+</head>
+<body>
+    	<h3> Implementing Validations using Regular Expressions in jQuery   </h3>
+	<hr />		
+	Person Name  :  <input type="text"  id="t1" />  
+	<br/><br/>
+    Person Contact Number  :  <input type="number"  id="n1" />  
+	<br/><br/>	
+    Vehicle Number :  <input type="text"  id="t2" />  
+	<br/><br/>
+    City Name :  <input type="text"  id="t3" />  
+	<br/><br/>
+	<script>
+$(document).ready(function(){ 
+	
+			 $('#t1').keyup(function() {
+			 
+						$("#sp1").remove();		
+						
+						var pname = $("#t1").val();				
+						
+						var Regtext1 = /^[a-zA-Z]{1,10}$/;
+                        
+								if(  Regtext1.test(pname)  ==  false && pname.length>0 ) 
+							{
+								$(this).after('<span id="sp1"  class="error">Maximum 10 Alphabets</span>');
+							}
+             
+ });
+
+ $('#n1').keyup(function() {
+			 
+             $("#sp2").remove();		
+             
+             var pnum = $("#n1").val();				
+             
+             var Regtext2 = /^[0-9]{10}$/;
+             
+                     if(  Regtext2.test(pnum)  ==  false  &&  pnum.length >  0) 
+                 {
+                     $(this).after('<span id="sp2"  class="error">10 Numbers</span>');
+                 }
+  
+});
+
+
+$('#t2').keyup(function() {
+			 
+             $("#sp3").remove();		
+             
+             var vnum = $("#t2").val();				
+             
+             var Regtext3 = /^[A-Z]{2}\d{2}[A-Z]{2}\d{4}$/;
+             
+                     if(  Regtext3.test(vnum)  ==  false  &&  vnum.length >  0) 
+                 {
+                     $(this).after('<span id="sp3"  class="error">AA11AA1111 Sample Pattern</span>');
+                 }
+  
+});
+
+
+$('#t3').keyup(function() {
+			 
+             $("#sp4").remove();		
+             
+             var cname = $("#t3").val();				
+             
+             var Regtext4 = /^[A-Z]{1,}$/;
+             
+                     if(  Regtext4.test(cname)  ==  false && cname.length>0 ) 
+                 {
+                     $(this).after('<span id="sp4"  class="error">Only Capital Letters</span>');
+                 }
+
+					 
+			});
+
+        })
+			 
+	
+</script>
+	
+ </body>
+</html>

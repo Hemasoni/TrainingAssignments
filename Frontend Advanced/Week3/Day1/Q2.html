@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2</title>
+    <style>
+        body{background-color: lightyellow;}
+    </style>
+    
+    <script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</head>
+<body>
+    <h2>Display CSV Values in List format using jQuery</h2>
+    <br><br>
+    Input String: 
+    <input type="text" id="t1">
+    <input type="button"  value="Get Data" id="b1">
+    <ul id="list" ></ul>
+    <script>
+        $(document).ready(function(){
+            $("#b1").click(function(){
+            var str = $("#t1").val();
+            let arr = str.split(',');
+            $("#list").html("");
+
+            for (i=0; i<arr.length; i++)
+            {$("#list").append("<li>" +arr[i].toUpperCase()+ "</li>" )}
+
+
+
+            });
+        }
+       
+       
+        );
+    
+        </script>
+    
+</body>
+</html>
