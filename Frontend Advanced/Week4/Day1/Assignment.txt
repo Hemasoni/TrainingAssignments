@@ -1,0 +1,49 @@
+1. What are the advantages of TypeScript over JavaScript?
+
+a) TypeScript is a more dependable programming language and refactorable in comparison to Javascript
+b) The TypeScript lets you know about the mistake at arrangement time. While JavaScript lets you know at the runtime.
+c) TypeScript overcomes the challenges of JavaScript for large-level complex applications. So, TypeScript saves development time and allows developers
+   to become more efficient.
+d) The difference between TypeScript and JavaScript is that. TypeScript compiles the code into JavaScript before execution.
+e) TypeScript uses concepts like interfaces and types to describe the data. While JavaScript has no such concept available. 
+f) TypeScript has a feature of prototyping but JavaScript does not have this feature. 
+g) TypeScript supports strongly typed or static typing features while JavaScript doesn’t. 
+
+2. How to use *ngIf in Angular?
+
+The ngIf Directive in Angular10 is used to remove or recreate a portion of HTML element based on an expression. 
+If the expression inside it is false then the element is removed and if it is true then the element is added to the DOM.
+Syntax:
+<li *ngIf='condition'></li>
+
+
+3. How to hide a html element using Angular ?
+
+The ng-hide directive hides the HTML element if the expression evaluates to true.
+Syntax
+<element ng-hide="expression"></element>
+
+
+5. What  is interface in TypeScript? Why do we use?
+
+Interfaces describe the structure of the object which means it describes how the object should look like. In other words, an interface defines the 
+syntax that any entity must adhere to.Interfaces define properties, methods, and events, which are the members of the interface.
+Interfaces contain only the declaration of the members. It is the responsibility of the deriving class to define the members. 
+It often helps in providing a standard structure that the deriving classes would follow.
+
+Example:
+interface Person { 
+   firstName:string, 
+   lastName:string, 
+   weight: number
+} 
+
+var customer:IPerson = { 
+   firstName:"Tom",
+   lastName:"Hanks", 
+   weight: 70,}
+
+
+8.  What is default export in TypeScript?
+Default exports are marked with the keyword default and there can only be one default export per module.
+
