@@ -1,0 +1,10 @@
+1.What is data binding in Angular? Why do we use it?
+Data binding in AngularJS is the synchronization between the model and the view. The data model is a collection of data available for the application.
+The HTML container where the AngularJS application is displayed, is called the view. The view has access to the model, and there are several ways of 
+displaying model data in the view. We can use the ng-bind directive, which will bind the innerHTML of the element to the specified model property.
+USAGE:
+Data binding in Angular is a way to keep our views consistent with the state of our application. We can bind properties and events in our template to our TypeScript component to do things like update the view when we input data, click a button, or trigger any other event.
+
+2.How to get index of the current item while using *ngFor?
+<div *ngFor="let item of items; let i = index">
+

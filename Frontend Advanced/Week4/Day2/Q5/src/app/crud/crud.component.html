@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+<fieldset>
+Id: <input type="number"  [(ngModel)]="id" />
+<br><br>
+Name: <input type="text"  [(ngModel)]="name" />
+<br><br>
+Price: <input type="number"  [(ngModel)]="price" />
+<br><br>
+Category: <input type="text"  [(ngModel)]="category" />
+<br><br>
+Quantity: <input type="number"  [(ngModel)]="quantity" />
+<br><br>
+
+<input type="button" value="Get Product"  (click)="getProduct_click()"  />
+<input type="button" value="Add Product"  (click)="addProduct_click()"  />
+<input type="button" value="Update Product"  (click)="updateProduct_click()"  />
+<input type="button" value="Reset"  (click)="reset_click()"  />
+<br/><br/>
+
+  <div [hidden]="show" style="float: left;width: 16%; border: 2px solid black; margin: 10px; padding: 5px; text-align: center; line-height: 30px; background-color: rgb(199, 188, 167);"  *ngFor="let item of productsArray;"  >
+    
+     Product Id: {{item.id}}
+      <br>
+      Name: {{item.name}}
+      <br>
+      Price: {{item.price}}
+      <br>
+      Category: {{item.category}}
+      <br>
+      Quantity: {{item.quantity}}
+      <br>
+      
+      <i class="bi-pencil-square" (click)="editProduct_click(item.id)" style="font-size:23px; margin-right: 20px;"></i>
+      <i class="bi-trash" (click)="removeProduct_click(item.id)" style="font-size:23px;"></i>
+  </div>
+</fieldset>
