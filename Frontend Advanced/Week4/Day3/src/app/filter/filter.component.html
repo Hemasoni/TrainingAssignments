@@ -1,0 +1,27 @@
+<h2>Salary Filter</h2>
+<hr>
+<table cellspacing="0" border="2px solid black">
+    <tr>
+        <th>S.no</th>
+        <th>Name</th>
+        <th>Salary</th>
+    </tr>
+    <tr *ngFor="let item of salArray" >
+        <td>{{item.sno}}</td>  
+        <td>{{item.name | uppercase}} </td>  
+        <td>{{item.salary}}</td>  
+    </tr>
+</table>
+
+<table cellspacing="0" border="2px solid black" >
+    <tr>
+        <th>S.no</th>
+        <th>Name</th>
+        <th>Salary</th>
+    </tr>
+    <tr *ngFor="let item of salArray|filter:10000:50000" >
+        <td>{{item.sno}}</td>  
+        <td>{{item.name | uppercase}} </td>  
+        <td>{{item.salary}}</td>  
+    </tr>
+</table>
