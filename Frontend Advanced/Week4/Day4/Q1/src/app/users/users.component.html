@@ -1,0 +1,23 @@
+<h3>AJAX </h3>
+<hr/>
+
+<input type="button" value="Get Customers" (click)="getData_click()"  />
+<br><br>
+
+<table border="2 solid black"   cellspacing="0">
+    <tr>
+      <th>User Id</th>
+      <th>Email</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Avatar</th>
+    </tr>
+  
+    <tr  *ngFor="let item of usersArray">
+      <td>{{item.id}}</td>
+      <td>{{item.email}}</td>
+      <td>{{item.first_name}}</td>
+      <td>{{item.last_name}}</td>
+      <td><img src={{item.avatar}}></td>
+    </tr>  
+  </table>

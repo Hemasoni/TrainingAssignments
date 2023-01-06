@@ -1,0 +1,34 @@
+{
+  "details": [
+    {
+      "empno": 1,
+      "ename": "Hemant",
+      "job": "HR",
+      "salary": 10000
+    },
+    {
+      "empno": 2,
+      "ename": "Sahil",
+      "job": "Analyst",
+      "salary": 20000
+    },
+    {
+      "empno": 3,
+      "ename": "Samridhi",
+      "job": "Consultant",
+      "salary": 30000
+    },
+    {
+      "empno": 4,
+      "ename": "Kritika",
+      "job": "CEO",
+      "salary": 40000
+    },
+    {
+      "ename": "",
+      "job": "",
+      "salary": 0,
+      "empno": 5
+    }
+  ]
+}
