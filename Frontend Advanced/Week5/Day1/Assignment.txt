@@ -1,0 +1,28 @@
+1a.What is MVC and MVVM?
+MVC:MVC consists of three components:Model, View, Controller
+
+Model: Model contains data about the application. All the information that is essential to be shown or displayed, its requirements with respect to access and other validations are all specified here.
+
+View: View displays the data in the Model component. Any response from the user is also recognized and sent to the Controller component.
+
+Controller: The Controller is responsible for providing the data present in the Model to the View component and interpreting the user responses that the View component recognizes.
+
+MVVM:The separation of the code in MVVM is divided into View, ViewModel and Model:
+
+View; It is the collection of visible elements, which also receives user input. This includes user interfaces (UI), animations and text. The content of View is not interacted with directly to change what is presented.
+
+ViewModel: ViewModel is located between the View and Model layers. This is where the controls for interacting with View are housed, while binding is used to connect the UI elements in View to the controls in ViewModel.
+
+Model: Model houses the logic for the program, which is retrieved by the ViewModel upon its own receipt of input from the user through View.
+
+1b.What is Single Responsibility Principle?
+In React, the Single Responsibility Principle means that a component is required to have only one reason to change. In short, the Single Responsibility Principle means that code with the same functionality should not exist in multiple places.
+
+2.What are keys in React JS?How to involve keys in array processing in React?
+A “key” is a special string attribute you need to include when creating lists of elements in React. Keys are used in React to identify which items in the list are changed, updated, or deleted. In other words, we can say that keys are used to give an identity to the elements in the lists. It is recommended to use a string as a key that uniquely identifies the items in the list.
+EXAMPLE:
+const numbers = [ 1, 2, 3, 4, 5 ];
+ 
+const updatedNums = numbers.map((number)=>{
+return <li key={index}>{number} </li>;
+});

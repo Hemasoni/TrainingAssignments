@@ -1,0 +1,29 @@
+img{
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  padding-top: 10px;
+
+}
+body{
+  background-color: gray;
+}
+div{
+  align-items: center;
+  margin: 25px
+}
+
+#d1{
+  float: left;
+width: 31%;
+margin: 10px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: white;
+  line-height: 10px;
+}
+button{
+  margin: 15px;
+  padding:10px;
+  background-color: rgb(230, 183, 15);
+}
