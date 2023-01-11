@@ -1,0 +1,21 @@
+div{
+  margin: 10px;
+}
+
+input{
+  margin: 3px;
+}
+
+a{
+  margin:2px
+}
+
+
+table{
+  border: 2px solid black;
+  background-color: rgb(183, 193, 155);
+}
+
+a:hover{
+  color: red;
+}
