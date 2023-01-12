@@ -1,0 +1,43 @@
+{
+  "electrics": [
+    {
+      "gname": "Fender Squier Bullet",
+      "imgsrc": "https://cdn.shopify.com/s/files/1/0657/6821/products/fender-bullet-strat-sb_1_large.png?v=1653118647",
+      "gdetails": "Stratocaster Electric Guitar",
+      "price": 17280,
+      "discount": 17,
+      "stars": 4
+    },
+    {
+      "gname": "Vault TL1 Tele Style",
+      "gdetails": "Electric Guitar",
+      "price": 14990,
+      "discount": 31,
+      "stars": 5,
+      "imgsrc": "https://cdn.shopify.com/s/files/1/0657/6821/products/VAU-TL1NT_large.jpg?v=1652181731"
+    },
+    {
+      "gname": "Newen Telecaster 6 string",
+      "gdetails": "Electric Guitar",
+      "price": 18644,
+      "discount": 5,
+      "stars": 4,
+      "imgsrc": "https://cdn.shopify.com/s/files/1/0657/6821/products/NEW-NEWTLDW_large.jpg?v=1639956961"
+    },
+    {
+      "gname": "Vault RG1 Soloist",
+      "gdetails": "Premium Electric Guitar",
+      "price": 18999,
+      "discount": 42,
+      "stars": 3,
+      "imgsrc": "https://cdn.shopify.com/s/files/1/0657/6821/products/SGE-VAULT-RG1-TBK_large.jpg?v=1639755422"
+    },
+    {
+      "gname": "Cort X Series X300",
+      "gdetails": "6-String Electric Guitar",
+      "price": "33264",
+      "discount": "5",
+      "imgsrc": "https://cdn.shopify.com/s/files/1/0657/6821/products/CRT-X300BRB_large.jpg?v=1654174456"
+    }
+  ]
+}

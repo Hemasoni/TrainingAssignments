@@ -1,0 +1,7 @@
+1.What is axois package - npm?  Why do we use it in React?
+-->Axios is used to communicate with the backend and it also supports the Promise API that is native to JS ES6.  
+-->It is a library which is used to make requests to an API, return data from the API, and then do things with that data in our React application. 
+-->Axios is a very popular HTTP client, which allows us to make HTTP  requests from the browser. 
+
+Axios allows us to communicate with APIs easily in our React apps. Though this can also be achieved by other methods like fetch or AJAX, Axios can provide a little more functionality that goes a long way with applications that use React.  
+Axios is a promise-based library used with Node.js and our browser to make asynchronous JavaScript HTTP requests. 

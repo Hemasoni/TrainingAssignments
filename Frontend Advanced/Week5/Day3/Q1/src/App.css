@@ -1,0 +1,12 @@
+img{
+  height: 100px;
+  width: 100px;
+}
+
+td{
+  border: 2px solid brown;
+}
+
+th{
+  border: 2px solid blue;
+}
